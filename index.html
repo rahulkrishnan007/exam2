@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random User Generator</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-200 min-h-screen p-5">
+
+    <div class="max-w-4xl mx-auto">
+
+        <h1 class="text-3xl font-bold text-center text-blue-600 mb-6">
+            Random User Generator
+        </h1>
+
+        <div class="bg-white p-5 rounded-lg shadow mb-5">
+
+            <label class="block mb-2 font-semibold">Number of Users</label>
+
+            <input type="number" id="count" value="1" min="1" max="50"
+                class="border p-2 rounded w-full mb-4">
+
+            <button onclick="getUsers()"
+                class="bg-blue-600 text-white px-5 py-2 rounded hover:bg-blue-700">
+                Generate Users
+            </button>
+
+        </div>
+
+        <div id="result" class="grid grid-cols-1 md:grid-cols-2 gap-5"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
